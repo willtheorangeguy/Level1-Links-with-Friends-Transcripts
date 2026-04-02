@@ -23,8 +23,6 @@ def download_playlist(playlist_url):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([playlist_url])
 
-# Depending on the year specified,
-# set the appropriate playlist URL and output path.
 if __name__ == "__main__":
     playlist = "https://www.youtube.com/playlist?list=PLcq4cFFv50gtSUtKIRKv7ssIrWgV6nQg0"
     download_playlist(playlist)
