@@ -3,7 +3,6 @@ This script uses yt-dlp to download videos, by year,
 from the Level 1 Links with Friends YouTube Channel.
 """
 
-import sys
 import yt_dlp
 
 def download_playlist(playlist_url):
@@ -16,9 +15,9 @@ def download_playlist(playlist_url):
         'noplaylist': False,
         'ignoreerrors': True,
         'download_archive': 'downloaded.log',
-        'remote-components': 'ejs:github',
-        'concurrent-fragments': True,
-        'no-mtime': True
+        'remote_components': 'ejs:github',
+        'concurrent_fragments': True,
+        'no_mtime': True
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([playlist_url])

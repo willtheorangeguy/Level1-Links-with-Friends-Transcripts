@@ -10,9 +10,10 @@ import subprocess
 scripts = [
     '1_download.py',
     '2_converter.py',
-    '3_transcriber.py',
-    '4_summarizer.py',
-    '5_cleanup.py',
+    '3_tagger.py',
+    '4_transcriber.py',
+    '5_summarizer.py',
+    '6_cleanup.py',
 ]
 
 # List of years
